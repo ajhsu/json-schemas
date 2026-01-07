@@ -212,6 +212,27 @@
             },
             "required": ["workspaceId", "artifactId"]
           }
+        },
+        "ontologies": {
+          "type": "array",
+          "description": "Array of Ontology data sources",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "workspaceId": {
+                "type": "string",
+                "description": "The workspace ID of the Ontology",
+                "format": "uuid"
+              },
+              "artifactId": {
+                "type": "string",
+                "description": "The artifact ID of the Ontology",
+                "format": "uuid"
+              }
+            },
+            "required": ["workspaceId", "artifactId"]
+          }
         }
       }
     },
