@@ -153,6 +153,10 @@
             "traffic": {
               "type": ["boolean", "null"],
               "description": "Enable traffic control"
+            },
+            "style": {
+              "type": ["boolean", "null"],
+              "description": "Enable map style picker"
             }
           }
         },
