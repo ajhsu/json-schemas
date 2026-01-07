@@ -287,11 +287,6 @@
           "geometryColumnName": {
             "type": ["string", "null"],
             "description": "Name of the geometry column"
-          },
-          "refreshIntervalMs": {
-            "type": "integer",
-            "description": "Refresh interval in milliseconds",
-            "minimum": 0
           }
         },
         "required": ["id", "name", "type", "parentArtifactId"]
@@ -573,6 +568,11 @@
                 "description": "A number between 0 and 1 that indicates the opacity at which the overlay will be drawn",
                 "minimum": 0,
                 "maximum": 1
+              },
+              "refreshIntervalMs": {
+                "type": "integer",
+                "description": "Refresh interval in milliseconds",
+                "minimum": 0
               }
             }
           }
